@@ -165,6 +165,7 @@ h3 {
 }
 
 .event-card {
+  min-width: 0;
   overflow: hidden;
   border: 1px solid #b7c0b7;
   border-radius: 0.75rem;
@@ -174,6 +175,7 @@ h3 {
 .event-card img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
