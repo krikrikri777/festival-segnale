@@ -158,8 +158,13 @@ h3 {
 
 /* Qui inseriremo la regola .event-grid durante la demo. */
 
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
 .event-card {
-  margin-bottom: 1.5rem;
   overflow: hidden;
   border: 1px solid #b7c0b7;
   border-radius: 0.75rem;
