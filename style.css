@@ -335,3 +335,11 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Focus visibile per la navigazione da tastiera */
+.luoghi-swiper button:focus-visible,
+.luoghi-swiper [role="button"]:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--colore-primario-scuro);
+  outline-offset: 4px;
+}
