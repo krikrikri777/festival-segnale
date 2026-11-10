@@ -289,3 +289,49 @@ h3 {
   height: 450px;
   border: 0;
 }
+
+/* Indirizzi delle sedi */
+.sedi-indirizzi {
+  margin-top: 2.5rem;
+}
+
+.sedi-indirizzi ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.sedi-indirizzi li {
+  padding: 1.25rem;
+  background: #ffffff;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+}
+
+.sedi-indirizzi h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.sedi-indirizzi p {
+  margin-top: 0;
+}
+
+.sedi-indirizzi a {
+  color: var(--colore-primario-scuro);
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .sedi-indirizzi ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .sedi-indirizzi ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
