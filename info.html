@@ -8,6 +8,26 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.css">
 </head>
+
+
+<script>
+  const swiper = new Swiper('.luoghi-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+
+    navigation: {
+      nextEl: '.luoghi-swiper .swiper-button-next',
+      prevEl: '.luoghi-swiper .swiper-button-prev',
+    },
+
+    pagination: {
+      el: '.luoghi-swiper .swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
 <body>
 
   <header class="site-header">
@@ -30,6 +50,65 @@
       <h1>Info e luoghi</h1>
       <p class="lead">Scopri le informazioni e le sedi del festival Segnale.</p>
     </section>
+    <section class="content-section" aria-labelledby="titolo-luoghi">
+      <h2 id="titolo-luoghi">Le sedi del festival</h2>
+      <p class="reading-text">
+        Tre luoghi diversi ospitano il festival Segnale.
+        Scopri gli spazi che accolgono i nostri appuntamenti.
+      </p>
+
+      <div class="swiper luoghi-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Sede centrale -->
+          <div class="swiper-slide">
+            <figure class="luogo-card">
+              <img src="assets/luoghi/sede-centrale.jpg"
+                   alt="Edificio della sede centrale">
+              <figcaption>
+                <h3>Sede centrale</h3>
+                <p>Uno spazio dedicato agli incontri e alle attività del festival.</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Politecnico Valentino -->
+          <div class="swiper-slide">
+            <figure class="luogo-card">
+              <img src="assets/luoghi/politecnico-valentino.jpg"
+                  alt="Edificio del Politecnico nella sede del Valentino">
+              <figcaption>
+                <h3>Politecnico – Valentino</h3>
+                <p>Un luogo di architettura e cultura, dedicato al confronto e alla condivisione di idee.</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Mirafiori -->
+          <div class="swiper-slide">
+            <figure class="luogo-card">
+             <img src="assets/luoghi/mirafiori.jpg"
+                   alt="Edificio industriale nell'area di Mirafiori">
+              <figcaption>
+               <h3>Mirafiori</h3>
+               <p>Uno spazio legato alla storia industriale torinese e alla sperimentazione progettuale.</p>
+             </figcaption>
+          </figure>
+          </div>
+
+        </div>
+
+        <!-- Frecce di navigazione -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- Indicatori -->
+        <div class="swiper-pagination"></div>
+
+      </div>
+    
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -37,8 +116,27 @@
       <p>Segnale · Progetto didattico · Festival immaginario</p>
     </div>
   </footer>
+
   
-  <script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.mjs';
+
+  const swiper = new Swiper('.luoghi-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+
+    navigation: {
+      nextEl: '.luoghi-swiper .swiper-button-next',
+      prevEl: '.luoghi-swiper .swiper-button-prev',
+    },
+
+    pagination: {
+      el: '.luoghi-swiper .swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
 
 </body>
 </html>

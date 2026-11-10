@@ -196,6 +196,52 @@ h3 {
   font-size: 0.875rem;
 }
 
+/* Galleria fotografica delle sedi */
+.luoghi-swiper {
+  width: 100%;
+  max-width: 850px;
+  margin: 2rem auto;
+  padding-bottom: 3rem;
+}
+
+.luogo-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.luogo-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.luogo-card figcaption {
+  padding: 1.5rem;
+}
+
+.luogo-card h3 {
+  margin-top: 0;
+}
+
+.luogo-card p {
+  margin-bottom: 0;
+}
+
+/* Colori dei controlli Swiper */
+.luoghi-swiper .swiper-button-prev,
+.luoghi-swiper .swiper-button-next {
+  color: var(--colore-primario);
+}
+
+.luoghi-swiper .swiper-pagination-bullet-active {
+  background: var(--colore-primario);
+}
+
 .site-footer {
   padding: 1.25rem 0;
   border-top: 1px solid #b7c0b7;
