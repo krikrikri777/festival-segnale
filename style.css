@@ -179,7 +179,7 @@ h3 {
 .event-card {
   min-width: 0;
   overflow: hidden;
-  border: 1px solid #b7c0b7;
+  border: 1px solid var(--colore-primario);
   border-radius: 0.75rem;
   background: #ffffff;
 }
@@ -215,7 +215,7 @@ h3 {
 .luogo-card {
   margin: 0;
   overflow: hidden;
-  border: 1px solid #b7c0b7;
+  border: 1px solid var(--colore-primario);
   border-radius: 0.75rem;
   background: #ffffff;
 }
@@ -314,7 +314,7 @@ h3 {
 .sedi-indirizzi li {
   padding: 1.25rem;
   background: #ffffff;
-  border: 1px solid #b7c0b7;
+  border: 1px solid var(--colore-primario);
   border-radius: 0.75rem;
 }
 
