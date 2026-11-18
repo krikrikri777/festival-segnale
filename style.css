@@ -96,7 +96,7 @@ nav a[aria-current="page"] {
 
 .eyebrow,
 .event-meta {
-  color: #46564b;
+  color: var(--colore-primario);
   font-size: 0.875rem;
   font-weight: bold;
 }
@@ -200,7 +200,7 @@ h3 {
 }
 
 .event-place {
-  color: #46564b;
+  color: var(--colore-primario);
   font-size: 0.875rem;
 }
 
@@ -252,8 +252,8 @@ h3 {
 
 .site-footer {
   padding: 1.25rem 0;
-  border-top: 1px solid #b7c0b7;
-  color: #46564b;
+  border-top: 1px solid var(--colore-sfondo);
+  color: var(--colore-primario);
   font-size: 0.875rem;
 }
 
@@ -262,7 +262,7 @@ h3 {
   top: -6rem;
   left: 1rem;
   padding: 0.75rem 1rem;
-  background: #ffffff;
+  background: var(--colore-sfondo);
   color: var(--colore-testo);
 }
 
