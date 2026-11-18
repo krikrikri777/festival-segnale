@@ -7,8 +7,8 @@
   --colore-primario-scuro: #104C49;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
-  --font-testo: Arial, Helvetica, sans-serif;
-  --font-titoli: Georgia, "Times New Roman", serif;
+  --font-titoli: 'Geist Pixel', sans-serif;
+  --font-testo: 'DM Sans', sans-serif;
 }
 
 * {
