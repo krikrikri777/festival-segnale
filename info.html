@@ -1,6 +1,6 @@
-
 <!doctype html>
 <html lang="it">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Geist+Pixel:wght@400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Geist+Pixel:wght@400&display=swap"
+    rel="stylesheet">
 </head>
 
 
@@ -77,8 +79,7 @@
           <!-- Sede centrale -->
           <div class="swiper-slide">
             <figure class="luogo-card">
-              <img src="assets/luoghi/sede-centrale.jpg"
-                   alt="Edificio della sede centrale">
+              <img src="assets/luoghi/sede-centrale.jpg" alt="Edificio della sede centrale">
               <figcaption>
                 <h3>Sede centrale</h3>
                 <p>Uno spazio dedicato agli incontri e alle attività del festival.</p>
@@ -90,7 +91,7 @@
           <div class="swiper-slide">
             <figure class="luogo-card">
               <img src="assets/luoghi/politecnico-valentino.jpg"
-                  alt="Edificio del Politecnico nella sede del Valentino">
+                alt="Edificio del Politecnico nella sede del Valentino">
               <figcaption>
                 <h3>Politecnico – Valentino</h3>
                 <p>Un luogo di architettura e cultura, dedicato al confronto e alla condivisione di idee.</p>
@@ -101,13 +102,12 @@
           <!-- Mirafiori -->
           <div class="swiper-slide">
             <figure class="luogo-card">
-             <img src="assets/luoghi/mirafiori.jpg"
-                   alt="Edificio industriale nell'area di Mirafiori">
+              <img src="assets/luoghi/mirafiori.jpg" alt="Edificio industriale nell'area di Mirafiori">
               <figcaption>
-               <h3>Mirafiori</h3>
-               <p>Uno spazio legato alla storia industriale torinese e alla sperimentazione progettuale.</p>
-             </figcaption>
-          </figure>
+                <h3>Mirafiori</h3>
+                <p>Uno spazio legato alla storia industriale torinese e alla sperimentazione progettuale.</p>
+              </figcaption>
+            </figure>
           </div>
 
         </div>
@@ -120,8 +120,51 @@
         <div class="swiper-pagination"></div>
 
       </div>
-    
+
     </section>
+
+    <section class="content-section" aria-labelledby="titolo-meteo">
+      <h2 id="titolo-meteo">Meteo a Torino adesso</h2>
+
+      <p class="reading-text">
+        Scopri le condizioni meteorologiche attuali a Torino.
+      </p>
+
+      <p id="meteo-stato" class="reading-text" role="status" aria-live="polite">
+        Caricamento dei dati meteo...
+      </p>
+
+      <div id="meteo-risultati" hidden>
+        <p>
+          <strong>Temperatura:</strong>
+          <span id="meteo-temperatura"></span>
+        </p>
+
+        <p>
+          <strong>Vento:</strong>
+          <span id="meteo-vento"></span>
+        </p>
+
+        <p>
+          <strong>Ora del dato:</strong>
+          <span id="meteo-ora"></span>
+        </p>
+
+        <p class="reading-text">
+          Dati meteo:
+          <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a>,
+          licenza
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY
+            4.0</a>.
+        </p>
+
+        <p class="reading-text">
+          Questi dati mostrano le condizioni meteorologiche di oggi
+          e non rappresentano una previsione per le date del festival.
+        </p>
+      </div>
+    </section>
+
     <section class="content-section" aria-labelledby="titolo-mappa">
       <h2 id="titolo-mappa">Come arrivare</h2>
 
@@ -131,16 +174,14 @@
       </p>
 
       <div class="mappa-container">
-        <iframe id="mappa-sedi"
-          title="Mappa delle tre sedi di riferimento per il festival Segnale a Torino"
+        <iframe id="mappa-sedi" title="Mappa delle tre sedi di riferimento per il festival Segnale a Torino"
           src="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528">
         </iframe>
       </div>
 
       <p class="mappa-link">
         <a href="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528"
-          target="_blank"
-          rel="noopener noreferrer">
+          target="_blank" rel="noopener noreferrer">
           Visualizza la mappa a schermo intero
         </a>
       </p>
@@ -154,7 +195,7 @@
             <h4>Sede centrale</h4>
             <p>Corso Duca degli Abruzzi 24, Torino</p>
             <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Corso+Duca+degli+Abruzzi+24%2C+Torino"
-                target="_blank" rel="noopener noreferrer">
+              target="_blank" rel="noopener noreferrer">
               Ottieni indicazioni
             </a>
           </li>
@@ -162,8 +203,8 @@
           <li>
             <h4>Politecnico al Valentino</h4>
             <p>Viale Mattioli 39, Torino</p>
-            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Viale+Mattioli+39%2C+Torino"
-                target="_blank" rel="noopener noreferrer">
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Viale+Mattioli+39%2C+Torino" target="_blank"
+              rel="noopener noreferrer">
               Ottieni indicazioni
             </a>
           </li>
@@ -172,7 +213,7 @@
             <h4>Sede di Mirafiori</h4>
             <p>Corso Luigi Settembrini 178, Torino</p>
             <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Corso+Luigi+Settembrini+178%2C+Torino"
-                target="_blank" rel="noopener noreferrer">
+              target="_blank" rel="noopener noreferrer">
               Ottieni indicazioni
             </a>
           </li>
@@ -189,26 +230,77 @@
     </div>
   </footer>
 
-  
-<script type="module">
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.mjs';
 
-  const swiper = new Swiper('.luoghi-swiper', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.mjs';
 
-    navigation: {
-      nextEl: '.luoghi-swiper .swiper-button-next',
-      prevEl: '.luoghi-swiper .swiper-button-prev',
-    },
+    const swiper = new Swiper('.luoghi-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
 
-    pagination: {
-      el: '.luoghi-swiper .swiper-pagination',
-      clickable: true,
-    },
-  });
-</script>
+      navigation: {
+        nextEl: '.luoghi-swiper .swiper-button-next',
+        prevEl: '.luoghi-swiper .swiper-button-prev',
+      },
 
+      pagination: {
+        el: '.luoghi-swiper .swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
+  <script>
+    async function caricaMeteo() {
+      const stato = document.getElementById("meteo-stato");
+      const risultati = document.getElementById("meteo-risultati");
+
+      const url = "https://api.open-meteo.com/v1/forecast?latitude=45.0703&longitude=7.6869&current=temperature_2m,wind_speed_10m&timezone=Europe%2FRome";
+
+      try {
+        const risposta = await fetch(url);
+
+        if (!risposta.ok) {
+          throw new Error("Errore nella richiesta meteo");
+        }
+
+        const dati = await risposta.json();
+
+        if (
+          !dati.current ||
+          !Number.isFinite(dati.current.temperature_2m) ||
+          !Number.isFinite(dati.current.wind_speed_10m) ||
+          !dati.current.time
+        ) {
+          throw new Error("Dati meteo non validi");
+        }
+
+        // Mostra temperatura e vento
+        document.getElementById("meteo-temperatura").textContent =
+          dati.current.temperature_2m + " " +
+          dati.current_units.temperature_2m;
+
+        document.getElementById("meteo-vento").textContent =
+          dati.current.wind_speed_10m + " " +
+          dati.current_units.wind_speed_10m;
+
+        // Mostra l'ora del rilevamento
+        document.getElementById("meteo-ora").textContent =
+          dati.current.time.replace("T", " alle ");
+
+        // Nasconde il caricamento e mostra i risultati
+        stato.hidden = true;
+        risultati.hidden = false;
+
+      } catch (errore) {
+        stato.textContent =
+          "Non è stato possibile caricare i dati meteo. Riprova più tardi.";
+      }
+    }
+
+    caricaMeteo();
+  </script>
 </body>
+
 </html>
